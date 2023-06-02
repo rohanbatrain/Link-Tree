@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #F0EDCC;
+      font-family: Arial, sans-serif;
+      color: #02343F;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 0 0 10px #F0EDCC,
+              0 0 0 20px #02343F; /* Add a ring with 10px gap */
+}
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 3px;	
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    li {
+      width: 400px; /* Adjust this value as needed for the box size */
+    }
+
+    .divider {
+      display: flex;
+      width: 100%;
+     }
+
+    .divider__left,
+    .divider__right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .divider__title {
+      font-family: 'Times New Roman', serif;
+      margin-bottom: 1px;
+      font-size: 20px;
+    }
+
+    a {
+      display: block;
+      padding: 10px 10px;
+      background-color: #02343F;
+      color: #F0EDCC;
+      text-decoration: none;
+      border-radius: 4px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    a:hover {
+      color: #02343F;
+      background-color: #F7F9FA;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Media Queries for Responsive Design */
+
+    @media only screen and (max-width: 768px) {
+      img {
+        width: 180px;
+        height: 180px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 0 0 5px #F0EDCC,
+              0 0 0 10px #02343F;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      .divider {
+        flex-direction: column;
+      }
+
+      .divider__left,
+      .divider__right {
+        width: 100%;
+
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      img {
+        width: 160px;
+        height: 160px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+              0 0 0 5px #F0EDCC,
+              0 0 0 10px #02343F;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      li {
+        width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="images/profile-photo.jpeg" alt="Profile Photo">
+  <h1>Hey, I am Harshdeep Singh</h1>
+  <div class="divider">
+    <div class="divider__left">
+      <h2 class="divider__title">PROFESSIONAL</h2>
+      <ul>
+        <li><a href=mailto:contact@harshdeepsingh.in>Email</a></li>
+        <li><a href="https://github.com/harshdeepcodes">Github</a></li>
+        <li><a href="https://t.me/quotesthathitmehard">Quotes (Telegram)</a></li>
+      </ul>
+    </div>
+    <div class="divider__right">
+      <h2 class="divider__title">PERSONAL</h2>
+      <ul>
+        <li><a href="https://t.me/harshluckyme">Telegram</a></li>
+        <li><a href="https://www.instagram.com/harshluckyme">Instagram</a></li>
+        <li><a href="https://open.spotify.com/user/zgearbiszvaowgdl6yvyx362k">Spotify</a></li>
+      </ul>
+    </div>
+  </div>
+  <!--  <script src="scipts/main.js"></script> -->
+</body>
+</html>
